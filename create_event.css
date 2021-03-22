@@ -1,0 +1,80 @@
+.wrap_create_events {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50px;
+    border: #F0D38A 10px solid;
+    padding: 5%;
+    background-color: #F0D38A;
+}
+
+.name_from_event {
+    padding: 20px;
+    font-size: 24px;
+}
+
+.button_cancel {
+    position: relative;
+    background-color: #be2e33;
+    border-radius: 50px;
+    width: 120px;
+    height: 40px;
+    border: solid 1px #D1C7BF;
+    left: 25%;
+}
+
+.button_create {
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    width: 120px;
+    height: 40px;
+    border: solid 1px #D1C7BF;
+}
+
+@media all and (max-width: 720px) {
+    .button_cancel {
+        left: 0;
+        width: 80px;
+    }
+
+    .button_create {
+        width: 80px;
+    }
+
+}
+
+@media all and (max-width: 460px) {
+    .button_cancel {
+        left: 0;
+        width: 40px;
+        font-size: 10px;
+    }
+
+    .button_create {
+        width: 40px;
+        font-size: 10px;
+    }
+
+}
+
+
+.item_from_event {
+    padding: 4%;
+    font-size: 24px;
+}
+
+
+.input:invalid {
+    border: 2px dashed red;
+}
+
+.input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+.input:valid {
+    border: 2px solid black;
+}
+

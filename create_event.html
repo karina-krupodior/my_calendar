@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="./create_event.css">
+</head>
+<body>
+<div class="wrap_create_events">
+    <form name="form"  onSubmit="return store()" >
+        <div class="item_from_event">
+            <label for='event_text'>Name of the event</label>
+            <input required type="text" id="event_text" class="event_class" name="event_text" placeholder=" "/>
+        </div>
+        <div class="item_from_event">
+            <label> Participants:
+                <select name="member_name" class="choose_name">
+                    <option>All members</option>
+                    <option>Anna</option>
+                    <option>Alex</option>
+                    <option>Bob</option>
+                    <option>Maria</option>
+                </select>
+            </label>
+        </div>
+        <div class="item_from_event">
+            <label for='select_days'>Day:</label>
+            <select name="day" id='select_days'>
+                <option class="item_from_event">Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+            </select>
+        </div>
+        <div class="item_from_event">
+
+            <label for='select_time'>Time:</label><select name="time" id='select_time'>
+            <option>10:00</option>
+            <option>11:00</option>
+            <option>12:00</option>
+            <option>13:00</option>
+            <option>14:00</option>
+            <option>15:00</option>
+            <option>16:00</option>
+            <option>17:00</option>
+            <option>18:00</option>
+        </select>
+        </div>
+        <div class="content">
+            <button type="submit" class="button_create"  id='button_create'>Create
+            </button>
+            <button class="button_cancel" type="reset" id='button_cancel' onclick="clear()"> Cancel</button>
+        </div>
+    </form>
+</div>
+<script src="./index.js"></script>
+</body>
+</html>
