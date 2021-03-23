@@ -2,7 +2,7 @@
 document.querySelector('span').innerHTML = 'Test';
 function store() {
 
-       history.pushState(null, null, 'my_calendar')
+       history.pushState(null, null, 'https://karina-krupodior.github.io/my_calendar')
 
     history.go(0)
 
