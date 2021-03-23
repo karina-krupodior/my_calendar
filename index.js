@@ -2,7 +2,8 @@
 document.querySelector('span').innerHTML = 'Test';
 function store() {
 
-    history.pushState(null, null, 'http:/calendar/')
+       history.pushState(null, null, 'http:/my_calendar/')
+
     history.go(0)
 
     let formData = new FormData(document.querySelector('form'))
